@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Righteous", cursive;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #2222;
+}
+
+.navbar {
+  padding: 0.4rem;
+  background-color: rgba(12, 10, 10, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: #573e57;
+  padding: 6px 20px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.4s ease all;
+}
+
+.link:hover {
+  color: #573e57;
+  transform: scale(3);
+}
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./components/nasa1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.home-link {
+  font-size: 40px;
+  background: #010000;
+  opacity: 0.8;
+  display: inline-block;
+  padding: 48px 80px;
+  color: #573e57;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  border-radius: 0;
+}
+
+@media (max-width: 12800px) {
+  .nasa-photo {
+    display: block;
+  }
+}
+.nasa-photo img {
+  padding-top: 9px;
+  display: flex;
+  width: 50%;
+  margin-right: 50px;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.second-page {
+  background-color: rgb(14, 14, 14);
+  background-image: url;
+  min-height: 100vh;
+  background-image: url("./components/nasa2.jpg");
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.second-page input {
+  background-color: rgb(14, 14, 14);
+  color: whitesmoke;
+  margin: 0 auto;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(2);
+}
